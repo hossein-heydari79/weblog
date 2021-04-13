@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "iransans";
+    src: url("assets/fonts/FontsFree-Net-ir_sans.ttf");
+}
+
+html,
+body {
+    width: 100%;
+    font-family: "iransans";
+}
+
+body {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.div-img {
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: rgb(91, 91, 255);
+    /* flex-wrap: wrap; */
+}
+
+.header-baner {
+    width: 80%;
+    height: 220px;
+    background-color: rgb(91, 91, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-form {
+    width: 30%;
+    height: 220px;
+    background-color: rgb(240, 240, 240);
+}
+
+.header-baner p {
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    padding: 0 30px;
+}
+
+.header-baner button {
+    border: none;
+    outline: none;
+    background-color: rgb(1, 1, 170);
+    /* margin-top: 50px; */
+    padding: 5px 10px;
+    font-size: 12px;
+    color: white;
+    font-family: "iransans";
+    position: absolute;
+    bottom: 30px;
+    cursor: pointer;
+}
+
+.header-form form {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.header-form form input {
+    margin: 5px 0;
+    background-color: white;
+    outline: none;
+    border: 1px solid lightgray;
+    direction: rtl;
+    height: 35px;
+    width: 90%;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.header-form form input::placeholder {
+    font-family: "iransans";
+    font-size: 12px;
+}
+
+.header-form form button {
+    width: 90%;
+    height: 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(68, 68, 255);
+    color: white;
+    font-family: "iransans";
+    font-size: 11px;
+    margin: 5px;
+}
+
+.header-form form a {
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.title {
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.title hr {
+    flex-grow: 1;
+}
+
+.title p {
+    padding: 0px 10px;
+    font-size: 14px;
+    color: blue;
+    /* width: 20%; */
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    /* padding: 20px 0; */
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    height: 180px;
+    /* background-color: blue; */
+    direction: rtl;
+    background-color: rgba(211, 211, 211, 0.5);
+    margin: 5px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.card p:first-child {
+    color: blue;
+}
+
+.card a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: gray;
+}
+
+.card p {
+    font-size: 12px;
+    margin: 10px;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    width: 60%;
+    list-style-type: none;
+}
+
+.footer ul li {
+    font-size: 12px;
+}
+
+.footer ul a {
+    color: rgb(46, 46, 247);
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-baner,
+    .header-form {
+        width: 100%;
+    }
+    .div-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .footer {
+        display: none;
+    }
+}
